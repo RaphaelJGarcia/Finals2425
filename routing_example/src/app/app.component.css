@@ -1,0 +1,58 @@
+/* General container padding */
+.container {
+    padding: 30px 15px;
+  }
+  
+  /* Section styling */
+  .section-content {
+    background-color: #f8f9fa; /* Light background color */
+    border: 1px solid #ddd; /* Light border for separation */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  h3, h1 {
+    color: #007bff;
+  }
+  
+  /* Left Section */
+  .left-section {
+    background-color: #f1f1f1;
+  }
+  
+  /* Main Section */
+  .main-section {
+    background-color: #ffffff;
+  }
+  
+  /* Right Section */
+  .right-section {
+    background-color: #f1f1f1;
+  }
+  
+  /* Ensure left and right sections don't take up too much space */
+  .left-section, .right-section {
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust the main section to be larger */
+  .main-section {
+    background-color: #ffffff;
+  }
+  
+  /* Responsive layout for smaller screens */
+  @media (max-width: 768px) {
+    .col-md-2, .col-md-8 {
+      max-width: 100%; /* Stack on mobile */
+      margin-bottom: 20px;
+    }
+  
+    .main-section {
+      margin-bottom: 20px;
+    }
+  }
+  

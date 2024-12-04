@@ -1,0 +1,35 @@
+<app-header></app-header>
+
+
+<div class="container">
+  <div class="row">
+
+    <!-- Left Section -->
+    <div class="col-md-2 left-section">
+      <div class="section-content">
+        <h3>Services: </h3>
+        <router-outlet name="left"></router-outlet>
+      </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="col-md-8 main-section">
+      <div class="section-content">
+        <h1>Main Section</h1>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="col-md-2 right-section">
+      <div class="section-content">
+        <h3>Right Section</h3>
+        <router-outlet name="right"></router-outlet>
+        <p>This is the right section content. You can place additional content here like advertisements, featured posts, or recent updates.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<app-footer></app-footer>

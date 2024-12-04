@@ -1,0 +1,85 @@
+/* General Navbar Styling */
+.custom-navbar {
+    background-color: #343a40; /* Dark background color */
+    border-bottom: 3px solid #007bff; /* Thicker blue border at the bottom for emphasis */
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #000000 !important; /* Black text for nav links */
+    font-size: 1.1rem; /* Slightly larger font size for better readability */
+    font-weight: normal; /* Remove bold text */
+    padding: 12px 20px; /* Add more padding for bigger clickable area */
+    text-transform: uppercase; /* Uppercase text for nav items */
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff !important; /* White text on hover for better contrast */
+    background-color: #007bff; /* Blue background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .navbar-light .navbar-nav .nav-item.active .nav-link {
+    color: #ffffff !important; /* Active state color */
+    background-color: #007bff; /* Blue background for active state */
+    border-radius: 5px; /* Rounded corners for active state */
+  }
+  
+  /* Styling the Brand */
+  .navbar-brand {
+    color: #000000 !important; /* Black color for brand */
+    font-size: 1.6rem; /* Larger font size for brand */
+    font-weight: normal; /* Remove bold from brand */
+    text-transform: uppercase; /* Uppercase brand name */
+    letter-spacing: 3px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    color: #007bff; /* Brand color change on hover */
+  }
+  
+  /* Navbar Toggler Button */
+  .navbar-toggler {
+    border-color: #007bff; /* Blue border for the toggler button */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #007bff; /* Blue icon color */
+  }
+  
+  /* Disabled Nav Item */
+  .navbar-nav .nav-link.disabled {
+    color: #6c757d; /* Light gray for disabled links */
+    pointer-events: none; /* Prevent clicking on disabled links */
+  }
+  
+  /* Spacing and alignment */
+  .navbar-nav.ml-auto {
+    margin-left: auto; /* Push nav items to the right */
+  }
+  
+  /* Navbar Responsive Styles */
+  @media (max-width: 991px) {
+    .custom-navbar {
+      background-color: #343a40; /* Keep the dark background color on mobile */
+    }
+  
+    .navbar-light .navbar-nav .nav-link {
+      color: #000000 !important; /* Ensure black text on mobile */
+      font-size: 1.2rem; /* Slightly larger text on mobile */
+      padding: 15px 25px; /* Larger clickable area on mobile */
+    }
+  
+    .navbar-toggler-icon {
+      background-color: #ffffff; /* White icon for the mobile menu */
+    }
+  
+    .navbar-light .navbar-nav .nav-item.active .nav-link {
+      color: #ffffff !important;
+      background-color: #007bff; /* Blue active state for mobile */
+    }
+  }
+  
