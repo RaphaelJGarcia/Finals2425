@@ -1,5 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
-    <a class="navbar-brand" routerLink="/" routerLinkActive="active" >Navbar</a>
+    <a class="navbar-brand" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Navbar</a>
+    
     <button 
       class="navbar-toggler" 
       type="button" 
@@ -10,10 +11,11 @@
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+  
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
@@ -29,4 +31,5 @@
         </li>
       </ul>
     </div>
-</nav>
+  </nav>
+  

@@ -81,5 +81,16 @@
       color: #ffffff !important;
       background-color: #007bff; /* Blue active state for mobile */
     }
+    /* Styling for active links */
+.navbar-nav .nav-link.active {
+    font-weight: bold;  /* Example: Make active link bold */
+    color: #007bff !important; /* Change text color when active */
+    background-color: #f8f9fa; /* Optional: Light background when active */
+    border-radius: 5px; /* Optional: Rounded corners for active link */
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 10px; /* Space between links */
+  }
   }
   
