@@ -33,7 +33,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     UserProfileComponent,
     AboutComponent,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

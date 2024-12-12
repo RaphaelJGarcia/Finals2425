@@ -1,11 +1,10 @@
 <app-header></app-header>
 
-
 <div class="container">
   <div class="row">
 
     <!-- Left Section -->
-    <div class="col-md-2 left-section">
+    <div class="col-md-3 left-section">
       <div class="section-content">
         <h3>Services: </h3>
         <router-outlet name="left"></router-outlet>
@@ -13,19 +12,19 @@
     </div>
 
     <!-- Main Section -->
-    <div class="col-md-8 main-section">
+    <div class="col-md-6 main-section">
       <div class="section-content">
-        <h1>Main Section</h1>
+        <h1>Content: </h1>
         <router-outlet></router-outlet>
       </div>
     </div>
 
     <!-- Right Section -->
-    <div class="col-md-2 right-section">
+    <div class="col-md-3 right-section">
       <div class="section-content">
-        <h3>Right Section</h3>
+        <h3>Service Details:</h3>
         <router-outlet name="right"></router-outlet>
-        <p>This is the right section content. You can place additional content here like advertisements, featured posts, or recent updates.</p>
+        
       </div>
     </div>
 

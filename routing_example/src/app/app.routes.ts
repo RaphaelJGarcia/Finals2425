@@ -25,14 +25,6 @@ export const routes: Routes = [
         component: HomeComponent,  // Default landing page
     },
     {
-        path: 'register', 
-        component: RegisterComponent,
-    },
-    {
-        path: 'userprofile',
-        component: UserProfileComponent,
-    },
-    {
         path: 'services',  
         component: ServicesComponent,
     },
@@ -44,6 +36,9 @@ export const routes: Routes = [
         path: 'about',  
         component: AboutComponent,
     },
+    { path: 'register', component: RegisterComponent },
+    { path: 'profile', component: UserProfileComponent },
+    { path: '', redirectTo: '/register', pathMatch: 'full' }
    
 ];
 
