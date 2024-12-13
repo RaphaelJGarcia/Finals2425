@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Main container */
+  .main-container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* Container for each section */
+  .section-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  /* Hero Section */
+  .hero {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  /* About the Project Section */
+  #about {
+    background-color: #f8f9fa;
+  }
+
+  #about p {
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+
+  /* Creator Section */
+  #creator {
+    background-color: #f1f1f1;
+  }
+
+  #creator p {
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+
+  #creator strong {
+    font-weight: bold;
+  }
+
+  /* Footer Section */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+  /* Carousel container styles */
+  #carouselExampleIndicators {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* Max width for the carousel */
+    height: 600px; /* Set a fixed height */
+    overflow: hidden;
+    margin: 20px auto; /* Center the carousel */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Carousel items */
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Carousel images */
+  .carousel-item img {
+    object-fit: cover; /* Ensures images cover the container */
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Indicators styles */
+  .carousel-indicators button {
+    background-color: #007bff; /* Blue color for the indicator dots */
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    border: none;
+  }
+
+  .carousel-indicators .active {
+    background-color: #ffffff; /* White color for active indicator */
+  }
+
+  /* Control buttons */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #007bff; /* Blue control icon color */
+    border-radius: 50%;
+    width: 25px; /* Smaller control icons */
+    height: 25px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background for the controls */
+    border: none;
+    padding: 5px;
+    z-index: 10;
+  }
+
+  .carousel-control-prev {
+    left: 10px;
+  }
+
+  .carousel-control-next {
+    right: 10px;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .section-container {
+      width: 95%;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+    }
+
+    /* Carousel container styles */
+    #carouselExampleIndicators {
+      height: 300px; /* Adjust height for smaller screens */
+      max-width: 100%; /* Allow carousel to take full width on smaller screens */
+    }
+
+    .carousel-item img {
+      object-fit: contain; /* Ensure images fit without stretching */
+      width: 100%;
+      height: auto;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 20px;
+      height: 20px; /* Smaller control icons for mobile */
+    }
+
+    .carousel-indicators button {
+      width: 6px;
+      height: 6px; /* Smaller indicator dots for mobile */
+    }
+  }

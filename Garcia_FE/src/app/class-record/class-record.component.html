@@ -1,0 +1,48 @@
+<div class="container mt-4">
+    <h2>Class Record</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Activity</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td>{{ student.id }}</td>
+          <td>{{ student.name }}</td>
+          <td>{{ student.activity }}</td>
+          <td>
+            
+            <button (click)="viewStudent(student)" class="btn btn-info btn-sm">
+              <i>view</i>
+            </button>
+            <a [routerLink]="['/edit', student.id]" class="btn btn-warning btn-sm">
+              <i>edit</i>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    
+    <div class="modal fade" id="studentModal" tabindex="-1" aria-labelledby="studentModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="studentModalLabel">Student Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <app-view [student]="selectedStudent"></app-view> 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

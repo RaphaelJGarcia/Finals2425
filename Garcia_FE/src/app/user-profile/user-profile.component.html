@@ -1,0 +1,29 @@
+<div class="container mt-4">
+    <h2>User Profile</h2>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let student of students">
+        <strong>Name:</strong> {{student.name}}<br>
+        <strong>Email:</strong> {{email}}<br>
+        <strong>Activity Type:</strong> {{student.activity}}<br>
+        <button (click)="viewStudent(student); openModal()" class="btn btn-info btn-sm">View</button>
+        <a [routerLink]="['/edit', student.id]" class="btn btn-warning btn-sm">Edit</a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="modal fade" id="studentModal" tabindex="-1" aria-labelledby="studentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="studentModalLabel">Student Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <app-view [student]="selectedStudent"></app-view> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>

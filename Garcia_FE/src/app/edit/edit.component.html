@@ -1,0 +1,28 @@
+<div class="container mt-4">
+    <h2>Edit Student</h2>
+    
+    <!-- Back button with icon -->
+    <button (click)="goBack()" class="btn mb-3">
+      <i class="fa fa-arrow-left"></i> Back
+    </button>
+  
+    <form (ngSubmit)="saveStudent()">
+      <div class="mb-3">
+        <label for="id" class="form-label">ID</label>
+        <input type="text" class="form-control" id="id" [value]="student?.id" readonly>
+      </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="student.name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="instructor" class="form-label">Instructor</label>
+        <input type="text" class="form-control" id="instructor" [(ngModel)]="student.instructor" name="instructor" required>
+      </div>
+      <div class="mb-3">
+        <label for="activity" class="form-label">Activity Type</label>
+        <input type="text" class="form-control" id="activity" [(ngModel)]="student.activity" name="activity" required>
+      </div>
+      <button type="submit" class="btn btn-success">Save</button>
+    </form>
+  </div>
